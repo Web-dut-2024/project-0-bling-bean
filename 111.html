@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>谷歌搜索</title>
+    <style>
+       search-box {
+            border: 1px solid #d4d4d4;
+            border-radius: 20px;
+            padding: 5px 10px;
+            width: 300px;
+            margin: 20px auto;
+        }
+        .search-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            margin-top: 10px;
+            border-radius: 5px;
+            background-color: #f8f8f8;
+            border: none;
+            cursor: pointer;
+        }
+        .lucky-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            margin-top: 10px;
+            border-radius: 5px;
+            background-color: #f8f8f8;
+            border: none;
+            cursor: pointer;
+        }
+        .links {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="links">
+        图像搜索
+        高级搜索
+    </div>
+    <div class="search-box">
+        <input type="text" id="search-query" placeholder="输入搜索内容">
+        <button class="search-button" onclick="window.location.href='https://www.google.com/search?q=' + document.getElementById('search-query').value">谷歌搜索</button>
+        <button class="lucky-button" onclick="window.location.href='https://www.google.com/search?q=' + document.getElementById('search-query').value + '&btnI'">我感觉很幸运</button>
+    </div>
+</body>
+</html>
